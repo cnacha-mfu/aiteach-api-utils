@@ -4,8 +4,5 @@ requires = ["setuptools"]
 [project]
 name = "aiteach-api-utils"
 version = "0.1.0"
-description = "A Python package for ..."  # Fill in your package description
-dependencies = [
-    "requests = ">=2.27.1",
-]
+description = "A Python package for AITeach API" 
 requires-python = ">=3.7"
