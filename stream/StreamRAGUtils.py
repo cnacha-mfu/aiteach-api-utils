@@ -9,6 +9,7 @@ from langchain.chains import LLMChain
 from langchain_community.vectorstores import Milvus
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.embeddings.google_palm import GooglePalmEmbeddings
 # from langchain_google_vertexai import VertexAIEmbeddings
 from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -70,7 +71,7 @@ class TokenStreamer:
         print("***milavus_connection_args is: ", milavus_connection_args) 
 
         #embedding = GooglePalmEmbeddings(model="models/text-embedding-004")
-        embedding = VertexAIEmbeddings(model_name="text-embedding-004")
+        embedding = GoogleGenerativeAIEmbeddings(model_name="models/embedding-001")
 
         # create a Milvus client
         vectordb = Milvus(
