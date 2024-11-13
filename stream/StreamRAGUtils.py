@@ -71,7 +71,7 @@ class TokenStreamer:
         print("***milavus_connection_args is: ", milavus_connection_args) 
 
         #embedding = GooglePalmEmbeddings(model="models/text-embedding-004")
-        embedding = GoogleGenerativeAIEmbeddings(model_name="models/embedding-001")
+        embedding = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
         # create a Milvus client
         vectordb = Milvus(
