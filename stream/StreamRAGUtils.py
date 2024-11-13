@@ -65,6 +65,8 @@ class TokenStreamer:
         ### connect to vectordb
         print("connecting to Milvus")
         print("***query is: ", self.input_query)
+        print("***course is: ", self.course)
+        print("***milavus_connection_args is: ", milavus_connection_args)
         embedding = GooglePalmEmbeddings(model="models/text-embedding-004")
 
         # create a Milvus client
