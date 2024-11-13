@@ -10,7 +10,7 @@ from langchain_community.vectorstores import Milvus
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.embeddings.google_palm import GooglePalmEmbeddings
-from langchain_google_vertexai import VertexAIEmbeddings
+# from langchain_google_vertexai import VertexAIEmbeddings
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_retrieval_chain
 
